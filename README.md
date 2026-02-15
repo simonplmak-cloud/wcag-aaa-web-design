@@ -18,16 +18,7 @@ Achieving WCAG 2.2 AAA compliance is notoriously difficult. This toolkit aims to
 
 More importantly, this is also an **AI agent skill**. As AI coding assistants increasingly build our websites, they often produce inaccessible code. This toolkit is structured to be used by an AI agent to autonomously generate a fully compliant website, ensuring the automated web is inclusive by default.
 
-## Key Features
-
--   **Enterprise-Grade UX**: Patterns prioritizing efficiency, clarity, and scalability for complex, data-intensive workflows.
--   **AAA-Compliant Design System**: A complete, token-based design system for colors, typography, and spacing where all defaults meet AAA contrast ratios.
--   **Secure by Default**: All templates and patterns follow OWASP best practices for front-end security, including guidance on Content Security Policy (CSP), Cross-Site Scripting (XSS), and Cross-Site Request Forgery (CSRF).
--   **Responsive & Device-Sensitive**: A mobile-first, 3-breakpoint responsive system that ensures usability on phones, tablets, and desktops.
--   **Modular & Maintainable**: No hardcoded values. All styling is driven by CSS custom properties. All JavaScript is modular with single-responsibility functions.
--   **Robust Validation**: Includes scripts for automated contrast checking and full WCAG 2.2 AAA accessibility audits.
-
-## Getting Started: How to Use This Toolkit
+## Getting Started
 
 ### For Developers
 
@@ -38,7 +29,25 @@ More importantly, this is also an **AI agent skill**. As AI coding assistants in
 
 ### For AI Agents
 
-This repository is designed to be used as a skill by an AI agent like Manus. The `SKILL.md` file provides the agent with a 7-step workflow to autonomously build a compliant web application.
+This repository is designed to be used as a skill by an AI agent like Manus. The `SKILL.md` file provides the agent with a 7-step workflow to autonomously build a compliant web application. To use this as an AI skill, follow these steps:
+
+1.  **Load the Skill**: Make the `wcag-aaa-web-design` directory available to your AI agent. In Manus, this is done by placing it in the `/home/ubuntu/skills/` directory.
+
+2.  **Provide a High-Level Prompt**: Give the agent a high-level goal that triggers the skill's description. The skill's `description` in `SKILL.md` is:
+
+    > "Create corporate/formal, device-sensitive web applications compliant with WCAG 2.2 AAA standards. Use for building highly accessible websites and web apps that require strict adherence to accessibility, a formal tone, and responsive design for at least three device sizes. This skill provides a complete workflow, design system, component templates, and validation scripts."
+
+3.  **Agent Execution**: The agent will read `SKILL.md` and follow the 7-step workflow, using the provided templates and references to build the application. The agent will:
+    -   Copy the templates.
+    -   Consult the design system and security references.
+    -   Implement navigation, content structure, and interactive components.
+    -   Run the validation scripts to audit its own work.
+
+**Example Prompt:**
+
+> "Build a 3-page corporate website for a financial consulting firm. The site must be highly accessible and meet WCAG 2.2 AAA standards. It needs a formal, professional design and must be responsive for mobile, tablet, and desktop. The pages are Home, About Us, and Contact Us."
+
+This prompt contains the keywords that will activate the skill and guide the agent through the structured development process.
 
 ## The 7-Step Workflow for Building Accessible Web Apps
 
