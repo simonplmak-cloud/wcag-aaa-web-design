@@ -6,7 +6,7 @@ All content now lives in the unified `accessibility` skill:
 
 - Reference guides (WCAG-AAA checklist, ARIA patterns, design system) → [`skills/accessibility/references/`](https://github.com/humanity4ai/project_human/tree/main/skills/accessibility/references)
 - AAA-verified templates (tokens.css, components, HTML partials) → [`skills/accessibility/templates/`](https://github.com/humanity4ai/project_human/tree/main/skills/accessibility/templates)
-- Contrast checker with auto-suggestion engine → [`legacy/python-scripts/check_contrast.py`](https://github.com/humanity4ai/project_human/blob/main/legacy/python-scripts/check_contrast.py)
+- Contrast checker with auto-suggestion engine → [`skills/accessibility/templates/check_contrast.py`](https://github.com/humanity4ai/project_human/blob/main/skills/accessibility/templates/check_contrast.py)
 
 ⭐ **Please star the new home**: https://github.com/humanity4ai/project_human
 
